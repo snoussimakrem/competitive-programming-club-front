@@ -1,0 +1,54 @@
+.home-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
+  }
+  
+  main {
+    padding-top: 5rem;
+  }
+  
+  /* Smooth section transitions */
+  section {
+    scroll-margin-top: 5rem;
+  }
+  
+  /* Background patterns */
+  .home-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .home-page > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Animation for sections */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  section:nth-child(even) {
+    background: linear-gradient(180deg, var(--dark) 0%, rgba(15, 23, 42, 0.8) 100%);
+  }

@@ -1,0 +1,164 @@
+.code-team-section {
+    background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .code-team-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .team-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.1);
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .team-grid-wrapper {
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .team-chroma-grid {
+    width: 100%;
+    min-height: 600px;
+  }
+  
+  .description-card {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .description-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  .description-card p {
+    color: var(--gray-light);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .team-benefits {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .team-benefits li {
+    color: var(--gray-light);
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+  }
+  
+  .team-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .team-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-benefits {
+      grid-template-columns: 1fr;
+    }
+    
+    .description-card {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-stats {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .team-chroma-grid {
+      min-height: 400px;
+    }
+    
+    .description-card h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description-card {
+      padding: 1.5rem;
+    }
+    
+    .stat-card {
+      padding: 1rem;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
