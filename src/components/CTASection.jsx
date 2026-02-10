@@ -308,7 +308,7 @@ import '../styles/CTASection.css';
 
 const CTASection = () => {
   // API Base URL - Try different options if needed
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://competitive-programming-club-backen.vercel.app/api';
   // Alternative: const API_BASE_URL = 'http://127.0.0.1:5000/api';
   
   // State
