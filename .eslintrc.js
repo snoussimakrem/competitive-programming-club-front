@@ -1,7 +1,8 @@
 module.exports = {
+    plugins: ["react-hooks"],
     rules: {
-      "no-unused-vars": "warn",
-      "no-sparse-arrays": "warn"
+      "react-hooks/rules-of-hooks": "warn",
+      "react-hooks/exhaustive-deps": "warn"
     }
   };
   
