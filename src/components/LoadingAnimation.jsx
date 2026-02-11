@@ -129,7 +129,7 @@ const LoadingAnimation = () => {
                     {progress >= 25 && progress < 50 && "Preparing test cases..."}
                     {progress >= 50 && progress < 75 && "Setting up judge system..."}
                     {progress >= 75 && progress < 100 && "Finalizing resources..."}
-                    {progress >= 100 && "Ready to code! 🚀"}
+                    {progress >= 100 && "Ready to code!"}
                   </span>
                 </div>
               </div>

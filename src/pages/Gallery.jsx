@@ -132,27 +132,7 @@ const Gallery = () => {
       club: 'Code Focus',
       description: 'Keeping our focus sharp on both code and composition'
     }
-    ,
-   
     
-    {
-      src: '/img/598189599_1774241643248871_7890490216885764949_n.jpg',
-      alt: 'Code Focus Club',
-      club: 'Code Focus',
-      description: 'Keeping our focus sharp on both code and composition'
-    },
-    {
-      src: '/img/598189599_1774241643248871_7890490216885764949_n.jpg',
-      alt: 'Code Focus Club',
-      club: 'Code Focus',
-      description: 'Keeping our focus sharp on both code and composition'
-    },
-    {
-      src: '/img/598189599_1774241643248871_7890490216885764949_n.jpg',
-      alt: 'Code Focus Club',
-      club: 'Code Focus',
-      description: 'Keeping our focus sharp on both code and composition'
-    }
   ];
 
   return (
