@@ -5,6 +5,7 @@ import DomeGallery from '../components/DomeGallery';
 import GalleryCTA from '../components/GalleryCTA';
 import Footer from '../components/Footer';
 import '../styles/Gallery.css';
+import SplashCursor from '../components/SplashCursor';
 
 const Gallery = () => {
   // Images de clubs de photographie/programmation avec informations
