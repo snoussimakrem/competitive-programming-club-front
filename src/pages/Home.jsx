@@ -35,8 +35,8 @@ const Home = () => {
         <FeaturedResources />
         <Testimonials />
         <CTASection />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 };
