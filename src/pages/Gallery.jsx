@@ -165,9 +165,9 @@ const Gallery = () => {
         </section>
         
         <GalleryCTA />
+        <Footer />
       </main>
       
-      <Footer />
     </div>
   );
 };
