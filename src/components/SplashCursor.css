@@ -17,7 +17,7 @@
   }
   
   /* Performance optimizations */
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .splash-cursor {
       display: none !important;
     }
