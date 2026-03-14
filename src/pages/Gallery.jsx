@@ -164,9 +164,9 @@ const Gallery = () => {
             />
           </div>
         </section>
-         <Footer />
-        <GalleryCTA />
          
+        <GalleryCTA />
+        <Footer />
       </main>
      
     </div>
