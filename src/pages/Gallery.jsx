@@ -164,11 +164,11 @@ const Gallery = () => {
             />
           </div>
         </section>
-        
+         <Footer />
         <GalleryCTA />
-       
+         
       </main>
-      <Footer />
+     
     </div>
   );
 };
