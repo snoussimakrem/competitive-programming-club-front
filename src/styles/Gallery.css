@@ -112,10 +112,27 @@
     }
   }
   
-  /* Prevent text selection during drag */
+  /* Prevent text selection during drag - dome only */
+  .gallery-dome-section,
   .gallery-dome-section * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    touch-action: none;
   }
+
+  /* Isolate dome drag clicks to image tiles only */
+  .sphere-main * { pointer-events: none; }
+  .item__image { pointer-events: auto; }
+
+  /* Exempt footer and CTA from dome restrictions */
+  .footer,
+  .footer *,
+  .gallery-cta,
+  .gallery-cta * {
+    pointer-events: auto !important;
+    -webkit-user-select: auto !important;
+    user-select: auto !important;
+    touch-action: auto !important;
+  }
+
+  .footer { z-index: 20 !important; }
