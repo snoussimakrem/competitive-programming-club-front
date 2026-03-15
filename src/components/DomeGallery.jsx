@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
-import '../styles/DomeGallery.css';
+import '../styles/Domegallery.css';
 
 const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 const normalizeAngle = d => ((d % 360) + 360) % 360;
@@ -309,7 +309,14 @@ export default function DomeGallery({
         }
       }
     },
-    { target: mainRef, eventOptions: { passive: true } }
+    {
+      target: mainRef,
+      eventOptions: { passive: true },
+      drag: {
+        filterTaps: true,
+        pointer: { touch: false, mouse: true, pen: true }
+      }
+    }
   );
 
   useEffect(() => {
