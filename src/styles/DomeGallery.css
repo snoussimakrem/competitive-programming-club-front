@@ -210,3 +210,8 @@
     margin: 0;
     padding: 0;
   }
+/* Footer isolation for splash cursor */
+.footer, .footer *, footer {
+  pointer-events: auto !important;
+  isolation: auto;
+}
