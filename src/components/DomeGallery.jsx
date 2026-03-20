@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
-import '../styles/Domegallery.css';
+import '../styles/DomeGallery.css';
 
 const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 const normalizeAngle = d => ((d % 360) + 360) % 360;
