@@ -450,23 +450,6 @@ const CTASection = () => {
                 </motion.div>
               ))}
             </div>
-
-           /* <div className="stats-row">
-              <div className="stat">
-                <Users size={24} />
-                <div>
-                  <div className="stat-number">200+</div>
-                  <div className="stat-label">Active Members</div>
-                </div>
-              </div>
-              <div className="stat">
-                <Award size={24} />
-                <div>
-                  <div className="stat-number">98%</div>
-                  <div className="stat-label">Satisfaction Rate</div>
-                </div>
-              </div>
-            </div>*/
           </motion.div>
 
           <motion.div
