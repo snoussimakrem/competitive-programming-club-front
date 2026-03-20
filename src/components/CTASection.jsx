@@ -451,7 +451,7 @@ const CTASection = () => {
               ))}
             </div>
 
-            <div className="stats-row">
+           /* <div className="stats-row">
               <div className="stat">
                 <Users size={24} />
                 <div>
@@ -466,7 +466,7 @@ const CTASection = () => {
                   <div className="stat-label">Satisfaction Rate</div>
                 </div>
               </div>
-            </div>
+            </div>*/
           </motion.div>
 
           <motion.div
