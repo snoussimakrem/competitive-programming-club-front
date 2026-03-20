@@ -462,7 +462,7 @@ const CTASection = () => {
             <div className="signup-card">
               <div className="card-header">
                 <h3 className="card-title">Join the Club Today</h3>
-                <p className="card-subtitle">Free membership - No credit card required</p>
+              
               </div>
 
               {/* Status Messages */}
