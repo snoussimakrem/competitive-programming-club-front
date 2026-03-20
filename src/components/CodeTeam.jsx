@@ -118,25 +118,7 @@ const CodeTeam = () => {
           viewport={{ once: true }}
           className="team-content"
         >
-         /* <motion.div variants={itemVariants} className="team-stats">
-            <div className="stat-card">
-              <div className="stat-number">15+</div>
-              <div className="stat-label">Years Combined Experience</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Problems Created</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">100+</div>
-              <div className="stat-label">Students Mentored</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Support Available</div>
-            </div>
-          </motion.div>
-*/
+     
           <motion.div variants={itemVariants} className="team-grid-wrapper" id="team-grid-wrapper">
             <ChromaGrid 
               items={teamMembers} 
