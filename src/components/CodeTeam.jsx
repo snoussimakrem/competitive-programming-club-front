@@ -67,7 +67,7 @@ const CodeTeam = () => {
     {
       image: '/img/i.jpg',
       title: 'Akrout Isra',
-      subtitle: 'Humain Resources Manager',
+      subtitle: 'Human Resource Manager',
       handle: 'isra.akrout@enicar.ucar.tn',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #0891B2)',
