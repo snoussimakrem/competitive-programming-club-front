@@ -122,30 +122,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <motion.div
-          className="stats-grid"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-        >
-          <div className="stat-item">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">beneficial</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">500+</div>
-            <div className="stat-label">inspiring Stories</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">500+</div>
-            <div className="stat-label">Success Stories</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">Recommended</div>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
